@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Enhanced SEO Meta Tags -->
+    <title>Motive SP Company | Motivational Speeches & Life Lessons | Inspiring Success Stories</title>
+    <meta name="description" content="Motive SP Company - Your destination for life-changing motivational speeches, success stories, and personal growth inspiration. Learn from global leaders, entrepreneurs, and visionaries.">
+    <meta name="keywords" content="motivational speeches, life lessons, success stories, personal growth, inspiration, leadership, entrepreneurship, self-improvement, motivation">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Motive SP Company | Transform Your Life with Powerful Motivational Content">
+    <meta property="og:description" content="Discover life-changing motivational speeches and success lessons from world's greatest leaders, entrepreneurs, and visionaries.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Motive SP Company">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .parent-company {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: -5px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23ffffff20"/></pattern></defs><rect width="100%" height="100%" fill="url(%23dots)"/></svg>');
+            background-size: cover;
+            color: white;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h2 {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        @keyframes fadeInUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(30px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+
+        .mission-highlight {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.9s both;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .section {
+            padding: 5rem 0;
+            background: white;
+            position: relative;
+        }
+
+        .section:nth-child(even) {
+            background: #f8f9ff;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #333;
+        }
+
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .speaker-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #667eea;
+        }
+
+        .speaker-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .speaker-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .speaker-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .speaker-title {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .speaker-quote {
+            font-style: italic;
+            color: #555;
+            text-align: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #f8f9ff;
+            border-radius: 10px;
+            border-left: 3px solid #667eea;
+        }
+
+        .speaker-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .stats-section {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            padding: 1.5rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #555;
+            color: #ccc;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: block;
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .speakers-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+            color: white;
+            font-size: 2rem;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div>
+                <div class="logo">MOTIVE SP COMPANY</div>
+                <div class="parent-company">A subsidiary of AJ Future Industries</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Transform Your Life with Powerful Motivation</h1>
+                    <h2>Discover life-changing speeches and success lessons from the world's greatest leaders, entrepreneurs, and visionaries</h2>
+                    
+                    <div class="mission-highlight">
+                        <h3 style="margin-bottom: 1rem;">Our Mission</h3>
+                        <p>To inspire millions of people worldwide through powerful motivational content, helping them unlock their potential, overcome challenges, and achieve extraordinary success in life.</p>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="#speakers" class="btn btn-primary">Meet Our Speakers</a>
+                        <a href="#features" class="btn btn-secondary">Explore Content</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">↓</div>
+        </section>
+
+        <!-- Featured Speakers Section -->
+        <section id="speakers" class="section">
+            <div class="container">
+                <h2>Inspiring Voices That Change Lives</h2>
+                <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 2rem;">Learn from the wisdom of legendary figures who have shaped our world through their vision, determination, and success</p>
+                
+                <div class="speakers-grid">
+                    <!-- Rabindranath Tagore -->
+                    <div class="speaker-card">
+                        <div class="speaker-image">RT</div>
+                        <div class="speaker-name">Rabindranath Tagore</div>
+                        <div class="speaker-title">Nobel Prize Winner & Philosopher</div>
+                        <div class="speaker-quote">"Don't limit a child to your own learning, for he was born in another time."</div>
+                        <div class="speaker-description">The first non-European to win Nobel Prize in Literature. His speeches on education, humanity, and cultural harmony continue to inspire millions worldwide.</div>
+                    </div>
+
+                    <!-- Elon Musk -->
+                    <div class="speaker-card">
+                        <div class="speaker-image">EM</div>
+                        <div class="speaker-name">Elon Musk</div>
+                        <div class="speaker-title">CEO Tesla & SpaceX</div>
+                        <div class="speaker-quote">"When something is important enough, you do it even if the odds are not in your favor."</div>
+                        <div class="speaker-description">Revolutionary entrepreneur pushing boundaries in electric vehicles, space exploration, and sustainable energy. His speeches inspire innovation and perseverance.</div>
+                    </div>
+
+                    <!-- Sundar Pichai -->
+                    <div class="speaker-card">
+                        <div class="speaker-image">SP</div>
+                        <div class="speaker-name">Sundar Pichai</div>
+                        <div class="speaker-title">CEO of Google & Alphabet</div>
+                        <div class="speaker-quote">"It is important to follow your dreams and heart. Do something that excites you."</div>
+                        <div class="speaker-description">From humble beginnings in India to leading one of world's most powerful tech companies. His journey teaches persistence and vision.</div>
+                    </div>
+
+                    <!-- Khan Sir -->
+                    <div class="speaker-card">
+                        <div class="speaker-image">KS</div>
+                        <div class="speaker-name">Khan Sir</div>
+                        <div class="speaker-title">Educational YouTuber & Teacher</div>
+                        <div class="speaker-quote">"Knowledge has no boundaries, and every student deserves quality education."</div>
+                        <div class="speaker-description">Revolutionizing education through engaging teaching methods. His motivational talks inspire millions of students across India to pursue their dreams.</div>
+                    </div>
+
+                    <!-- Alakh Pandey (PW) -->
+                    <div class="speaker-card">
+                        <div class="speaker-image">AP</div>
+                        <div class="speaker-name">Alakh Pandey (PW)</div>
+                        <div class="speaker-title">Physics Wallah & Educator</div>
+                        <div class="speaker-quote">"Education should be accessible to all, regardless of economic background."</div>
+                        <div class="speaker-description">Making quality education affordable and accessible. His motivational speeches about perseverance and dedication inspire millions of students.</div>
+                    </div>
+
+                    <!-- Virat Kohli -->
+                    <div class="speaker-card">
+                        <div class="speaker-image">VK</div>
+                        <div class="speaker-name">Virat Kohli</div>
+                        <div class="speaker-title">Cricket Champion & Leader</div>
+                        <div class="speaker-quote">"Self-belief and hard work will always earn you success."</div>
+                        <div class="speaker-description">One of cricket's greatest batsmen. His speeches on dedication, fitness, and mental strength inspire athletes and youth worldwide.</div>
+                    </div>
+
+                    <!-- Sourav Ganguly -->
+                    <div class="speaker-card">
+                        <div class="speaker-image">SG</div>
+                        <div class="speaker-name">Sourav Ganguly</div>
+                        <div class="speaker-title">Former Indian Cricket Captain</div>
+                        <div class="speaker-quote">"I believe in giving more than 100% on the field, and I don't really worry about the result if there's great commitment on the field."</div>
+                        <div class="speaker-description">Legendary captain who transformed Indian cricket. His leadership lessons inspire teams and individuals to achieve greatness.</div>
+                    </div>
+
+                    <!-- Lord Krishna -->
+                    <div class="speaker-card">
+                        <div class="speaker-image">LK</div>
+                        <div class="speaker-name">Lord Krishna</div>
+                        <div class="speaker-title">Divine Teacher & Philosopher</div>
+                        <div class="speaker-quote">"You have the right to work, but never to the fruit of work."</div>
+                        <div class="speaker-description">Timeless wisdom from the Bhagavad Gita. His teachings on duty, righteousness, and detachment guide millions toward spiritual and material success.</div>
+                    </div>
+
+                    <!-- Prashant Kirad -->
+                    <div class="speaker-card">
+                        <div class="speaker-image">PK</div>
+                        <div class="speaker-name">Prashant Kirad</div>
+                        <div class="speaker-title">YouTuber & Content Creator</div>
+                        <div class="speaker-quote">"Consistency and authenticity are the keys to building a meaningful online presence."</div>
+                        <div class="speaker-description">Popular content creator inspiring youth through practical advice on career, relationships, and personal growth in the digital age.</div>
+                    </div>
+
+                    <!-- CEO Arijit Mahata -->
+                    <div class="speaker-card">
+                        <div class="speaker-image">AM</div>
+                        <div class="speaker-name">CEO Arijit Mahata</div>
+                        <div class="speaker-title">CEO AJ Future Industries</div>
+                        <div class="speaker-quote">"Innovation combined with determination can transform any dream into reality."</div>
+                        <div class="speaker-description">Visionary entrepreneur leading AJ Future Industries. His speeches on leadership, innovation, and building successful businesses inspire the next generation of entrepreneurs.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section">
+            <div class="container">
+                <h2>Why Choose Motive SP Company</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Life-Changing Content</h3>
+                        <p>Carefully curated motivational speeches and success stories that provide practical wisdom for personal and professional growth.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌟</div>
+                        <h3>World-Class Speakers</h3>
+                        <p>Learn from legends, entrepreneurs, athletes, educators, and spiritual leaders who have made significant impacts on society.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>Proven Success Methods</h3>
+                        <p>Access time-tested strategies and principles that successful people use to overcome challenges and achieve their goals.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎓</div>
+                        <h3>Educational Excellence</h3>
+                        <p>Gain insights on learning, teaching, and skill development from some of the most respected educators and thought leaders.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💪</div>
+                        <h3>Mental Strength Building</h3>
+                        <p>Develop resilience, confidence, and mental toughness through powerful lessons from champions and achievers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Future-Ready Mindset</h3>
+                        <p>Prepare for tomorrow's challenges with innovative thinking and adaptability lessons from visionary leaders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <h2>Inspiring Millions Worldwide</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">10M+</span>
+                        <p>Lives Transformed</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <p>Inspiring Speeches</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <p>World-Class Speakers</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <p>Countries Reached</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Motive SP Company</h2>
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1.2rem; color: #666; line-height: 1.8; margin-bottom: 2rem;">
+                        Founded as a subsidiary of AJ Future Industries, Motive SP Company is dedicated to empowering individuals through powerful motivational content and life lessons. We believe that everyone has the potential to achieve greatness, and our mission is to provide the inspiration, knowledge, and tools needed to unlock that potential.
+                    </p>
+                    <p style="font-size: 1.1rem; color: #666; line-height: 1.8; margin-bottom: 2rem;">
+                        Our carefully curated collection features speeches and insights from legendary figures across various fields - from Nobel Prize winners and spiritual leaders to modern entrepreneurs, educators, and athletes. Each piece of content is selected for its power to inspire positive change and practical wisdom that can be applied immediately.
+                    </p>
+                    <div style="background: #f8f9ff; padding: 2rem; border-radius: 15px; border-left: 4px solid #667eea;">
+                        <h3 style="color: #333; margin-bottom: 1rem;">Our Purpose</h3>
+                        <p style="color: #555;">To create a global community of motivated individuals who support each other in pursuing their dreams, overcoming obstacles, and making a positive impact on the world.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Motive SP Company</h3>
+                    <p>A subsidiary of AJ Future Industries</p>
+                    <p style="margin-top: 1rem;">Empowering lives through powerful motivational content and success lessons from world's greatest leaders.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#speakers">Featured Speakers</a></li>
+                        <li><a href="#features">Our Features</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@motivespcompany.com</p>
+                    <p>Support: support@motivespcompany.com</p>
+                    <p>Partnerships: partners@motivespcompany.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">YouTube Channel</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Motive SP Company - A subsidiary of AJ Future Industries. Inspiring success and transforming lives worldwide through powerful motivational content and timeless wisdom.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background change on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe speaker cards for staggered animation
+        document.querySelectorAll('.speaker-card').forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(50px)';
+            card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+            observer.observe(card);
+        });
+
+        // Observe feature cards
+        document.querySelectorAll('.feature-card').forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+            observer.observe(card);
+        });
+
+        // Mobile menu functionality
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Counter animation for stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent.replace(/[^\d]/g, ''));
+                const suffix = counter.textContent.replace(/[\d]/g, '');
+                let current = 0;
+                const increment = target / 100;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = Math.floor(current) + suffix;
+                }, 20);
+            });
+        }
+
+        // Trigger counter animation when stats section is visible
+        const statsSection = document.querySelector('.stats-section');
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // Add motivational quote rotator
+        const motivationalQuotes = [
+            "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+            "The future belongs to those who believe in the beauty of their dreams.",
+            "Your limitation—it's only your imagination.",
+            "Great things never come from comfort zones.",
+            "Dream it. Wish it. Do it.",
+            "Success doesn't just find you. You have to go out and get it.",
+            "The harder you work for something, the greater you'll feel when you achieve it."
+        ];
+
+        let quoteIndex = 0;
+        function rotateQuote() {
+            const quoteElement = document.querySelector('.rotating-quote');
+            if (quoteElement) {
+                quoteElement.style.opacity = '0';
+                setTimeout(() => {
+                    quoteElement.textContent = motivationalQuotes[quoteIndex];
+                    quoteElement.style.opacity = '1';
+                    quoteIndex = (quoteIndex + 1) % motivationalQuotes.length;
+                }, 300);
+            }
+        }
+
+        // Add rotating quote to hero section
+        window.addEventListener('load', function() {
+            const heroContent = document.querySelector('.hero-content');
+            if (heroContent) {
+                const quoteDiv = document.createElement('div');
+                quoteDiv.className = 'rotating-quote';
+                quoteDiv.style.cssText = `
+                    font-style: italic;
+                    font-size: 1.1rem;
+                    opacity: 0.8;
+                    margin: 1rem 0;
+                    transition: opacity 0.3s ease;
+                    min-height: 2rem;
+                `;
+                quoteDiv.textContent = motivationalQuotes[0];
+                
+                const missionHighlight = heroContent.querySelector('.mission-highlight');
+                heroContent.insertBefore(quoteDiv, missionHighlight);
+                
+                // Start quote rotation
+                setInterval(rotateQuote, 4000);
+            }
+        });
+
+        // Add scroll progress indicator
+        window.addEventListener('scroll', () => {
+            const scrolled = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            let progressBar = document.querySelector('.scroll-progress');
+            
+            if (!progressBar) {
+                progressBar = document.createElement('div');
+                progressBar.className = 'scroll-progress';
+                progressBar.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 3px;
+                    background: linear-gradient(45deg, #667eea, #764ba2);
+                    z-index: 9999;
+                    transition: width 0.1s ease;
+                `;
+                document.body.appendChild(progressBar);
+            }
+            
+            progressBar.style.width = scrolled + '%';
+        });
+
+        // Add search functionality for speakers
+        function addSearchFunctionality() {
+            const searchContainer = document.createElement('div');
+            searchContainer.style.cssText = `
+                text-align: center;
+                margin: 2rem 0;
+            `;
+            
+            const searchInput = document.createElement('input');
+            searchInput.type = 'text';
+            searchInput.placeholder = 'Search for speakers...';
+            searchInput.style.cssText = `
+                padding: 12px 20px;
+                border: 2px solid #667eea;
+                border-radius: 25px;
+                font-size: 1rem;
+                width: 300px;
+                max-width: 90%;
+                outline: none;
+                transition: all 0.3s ease;
+            `;
+            
+            searchInput.addEventListener('focus', () => {
+                searchInput.style.boxShadow = '0 0 15px rgba(102, 126, 234, 0.3)';
+            });
+            
+            searchInput.addEventListener('blur', () => {
+                searchInput.style.boxShadow = 'none';
+            });
+            
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                const speakerCards = document.querySelectorAll('.speaker-card');
+                
+                speakerCards.forEach(card => {
+                    const name = card.querySelector('.speaker-name').textContent.toLowerCase();
+                    const title = card.querySelector('.speaker-title').textContent.toLowerCase();
+                    const description = card.querySelector('.speaker-description').textContent.toLowerCase();
+                    
+                    if (name.includes(searchTerm) || title.includes(searchTerm) || description.includes(searchTerm)) {
+                        card.style.display = 'block';
+                        card.style.opacity = '1';
+                        card.style.transform = 'scale(1)';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            searchContainer.appendChild(searchInput);
+            
+            const speakersSection = document.querySelector('#speakers .container');
+            const speakersGrid = speakersSection.querySelector('.speakers-grid');
+            speakersSection.insertBefore(searchContainer, speakersGrid);
+        }
+
+        // Initialize search functionality
+        window.addEventListener('load', addSearchFunctionality);
+
+        // Add newsletter signup
+        function addNewsletterSignup() {
+            const newsletterSection = document.createElement('section');
+            newsletterSection.className = 'section';
+            newsletterSection.style.background = 'linear-gradient(45deg, #667eea, #764ba2)';
+            newsletterSection.style.color = 'white';
+            
+            newsletterSection.innerHTML = `
+                <div class="container">
+                    <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                        <h2>Stay Motivated Daily</h2>
+                        <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">Get daily motivation, success tips, and inspiring quotes delivered to your inbox</p>
+                        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; max-width: 400px; margin: 0 auto;">
+                            <input type="email" placeholder="Enter your email" style="flex: 1; min-width: 200px; padding: 12px 20px; border: none; border-radius: 25px; font-size: 1rem; outline: none;">
+                            <button style="padding: 12px 24px; background: #ff6b6b; color: white; border: none; border-radius: 25px; font-weight: bold; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">Subscribe</button>
+                        </div>
+                        <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">Join 100,000+ people already receiving daily motivation</p>
+                    </div>
+                </div>
+            `;
+            
+            const aboutSection = document.querySelector('#about');
+            aboutSection.parentNode.insertBefore(newsletterSection, aboutSection.nextSibling);
+        }
+
+        // Add newsletter signup
+        window.addEventListener('load', addNewsletterSignup);
+
+        console.log('Motive SP Company website loaded successfully!');
+    </script>
+</body>
+</html>
